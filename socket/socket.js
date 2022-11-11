@@ -8,7 +8,7 @@ const {
 
 const generateRoom = require("../utils/generateRoom");
 
-let count = 1;
+let count = 0;
 const socketController = (io) => {
   io.on("connection", async (socket) => {
     count++;
